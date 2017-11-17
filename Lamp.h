@@ -6,18 +6,18 @@
 
 namespace lamp {
 
-	class Lamp {
+  class Lamp {
 
-	public:
-		explicit Lamp(IHttpServer* http, IRgbLed* led) : _http(http), _handler(new HttpHandler(led)), _led(led) {}
+    public:
+      explicit Lamp(IHttpServer* http, IRgbLed* led) : _http(http), _handler(new HttpHandler(led)), _led(led) {}
 
-		void start(int port) const;
+      void start(int port) const;
 
-	private:
-		IHttpServer* _http;
-		IHttpHandler* _handler;
-		IRgbLed* _led;
+    private:
+      IHttpServer* _http;
+      IHttpHandler* _handler;
+      IRgbLed* _led;
 
-	};
+  };
 
 }

@@ -4,15 +4,15 @@
 
 namespace lamp {
 
-	struct IHttpHandler;
+  struct IHttpHandler;
 
-	struct IHttpServer {
+  struct IHttpServer {
 
-		virtual ~IHttpServer() noexcept = default;
+    virtual ~IHttpServer() noexcept = default;
 
-		virtual void start(int port, IHttpHandler* handler) = 0;
-		virtual void stop() = 0;
+    virtual void start(int port, IHttpHandler* handler) = 0;
+    virtual void stop() = 0;
 
-	};
+  };
 
 }

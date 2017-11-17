@@ -6,12 +6,12 @@ using namespace std;
 
 namespace lamp {
 
-	struct IHttpHandler {
+  struct IHttpHandler {
 
-		virtual ~IHttpHandler() noexcept = default;
+    virtual ~IHttpHandler() noexcept = default;
 
-		virtual string handleHttpRequest(string method, string path) = 0;
+    virtual string handleHttpRequest(string method, string path) = 0;
 
-	};
+  };
 
 }
