@@ -6,6 +6,7 @@
 
 namespace lamp {
 
+  using namespace std;
   using namespace std::chrono;
 
   // Four 12 bit values total 6 bytes
@@ -16,7 +17,6 @@ namespace lamp {
     unsigned int w : 12;
   };
 
-  //template<uint8_t N>
   struct ILedBoardChain {
 
     virtual ~ILedBoardChain() noexcept = default;

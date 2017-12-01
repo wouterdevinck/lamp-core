@@ -9,7 +9,6 @@
 
 namespace lamp {
 
-  //template<uint8_t N>
   class Lamp {
 
     public:
