@@ -17,11 +17,21 @@ namespace lamp {
     unsigned int w : 12;
   };
 
+  enum AnimationType {
+    Linear
+  };
+
+  struct KeyFrame {
+    milliseconds duration;
+    AnimationType type;
+    vector<LedValue> frame;
+  };
+
   struct ILedBoardChain {
 
     virtual ~ILedBoardChain() noexcept = default;
 
-    virtual void addKeyframe(milliseconds duration, vector<LedValue> keyframe) = 0;
+    virtual void addKeyframe(KeyFrame keyframe) = 0;
 
   };
 
