@@ -33,6 +33,14 @@ namespace lamp {
 
     virtual void addKeyframe(KeyFrame keyframe) = 0;
 
+    // TODO
+    // ====
+    //  * Set startup animation
+    //  * Global brightness adjust
+    //  * Get LED status
+    //  * Get firmware version
+    //  * Firmware upgrade
+
   };
 
 }
