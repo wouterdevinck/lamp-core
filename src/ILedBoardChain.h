@@ -1,6 +1,6 @@
 #pragma once
 
-#include <cstdint>
+//#include <cstdint>
 #include <chrono>
 #include <vector>
 
@@ -18,7 +18,7 @@ namespace lamp {
   };
 
   enum AnimationType {
-    Linear
+    Linear = 0
   };
 
   struct KeyFrame {
